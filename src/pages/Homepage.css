@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://imgs.search.brave.com/65RSWMDQMC6AF_MYZ0mVDmeZt_5Go4SRSdJt9I8PMXE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9v/bGQtYmxhY2stYmFj/a2dyb3VuZC1ncnVu/Z2UtdGV4dHVyZS1k/YXJrLXdhbGxwYXBl/ci1ibGFja2JvYXJk/LWNoYWxrYm9hcmQt/cm9vbS13YWxsXzEy/NTgtMjgzMTMuanBn/P3NpemU9NjI2JmV4/dD1qcGc'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.email {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.delete-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ff0000; /* Change the color as desired */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #cc0000; /* Change the color for hover state */
+}

@@ -1,0 +1,34 @@
+/* Header.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 30px;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff9900; /* Change the color for hover effect */
+    transform: scale(1.1); /* Add a simple scaling animation on hover */
+  }
+  
+  .user-greeting {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  /* You can adjust the colors, fonts, and other styles as desired */
+  
