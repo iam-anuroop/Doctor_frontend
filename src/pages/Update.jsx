@@ -2,9 +2,11 @@ import React, { useContext, useState } from 'react'
 import AuthContext from '../context/AuthContext'
 import axios from 'axios'
 import './Update.scss'
+import { useNavigate } from 'react-router-dom'
 
 
 function Update() {
+  const navigate = useNavigate()
   const {deletehandle,user,authTokens} = useContext(AuthContext)
  console.log(user.user);
   const EditProfile = async (e) =>{
@@ -30,7 +32,7 @@ function Update() {
                   email: e.target.email.value,          
                   ...(e.target.firstname.value && { first_name: e.target.firstname.value }),
                   ...(e.target.lastname.value && {last_name: e.target.lastname.value}),
-                  doctors: user.doctors? {
+                  doctors: user.user.doctors? {
                     ...(e.target.hospital.value && { hospital: e.target.hospital.value }),
                     ...(e.target.department.value && { department: e.target.department.value }),
                   }:undefined,

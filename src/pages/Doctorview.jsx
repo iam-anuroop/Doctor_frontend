@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
+import './Doctorview.css'
 
 function Doctorview() {
 
@@ -44,9 +45,15 @@ function Doctorview() {
     <div>
       <h3>Doctors</h3>
       {doctors.map((doctor)=>(
-        <div>
-          <h1>{doctor.username}</h1>
-        </div>
+        <div className="card">
+        <i className="fa-solid fa-stethoscope"></i>
+        <h4 className="card-title">{doctor.username}</h4>
+        <p className="card-text">Specialisation : {doctor.doctors.department}</p>
+        <p className="card-text">Hospital : {doctor.doctors.hospital}</p>
+        <div className="btn-holder">
+          <a className="btn btn-outline-primary" href="#" title="">Button Text</a>
+          </div>
+      </div>      
       ))}
     </div>
     

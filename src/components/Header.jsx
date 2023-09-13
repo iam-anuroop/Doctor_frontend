@@ -109,15 +109,15 @@ console.log(user);
                 
                 </li>
                 <li className="nav-item">
-                <Link to="/update" className="nav-link">
+                {user&&user?<Link to="/update" className="nav-link">
                 Update
-                </Link>
+                </Link>:null}
                 </li>
                 <li className="nav-item">
-                  
-                <Link to="/doc" className="nav-link">
+
+                {user&&user?<Link to="/doc" className="nav-link">
                 Doctors
-                </Link>
+                </Link>:null}
                 </li>
                 <li className="nav-item">
                 {user&&user.is_admin?<Link to="/adminpanel" className="nav-link">
