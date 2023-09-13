@@ -1,11 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://imgs.search.brave.com/65RSWMDQMC6AF_MYZ0mVDmeZt_5Go4SRSdJt9I8PMXE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9v/bGQtYmxhY2stYmFj/a2dyb3VuZC1ncnVu/Z2UtdGV4dHVyZS1k/YXJrLXdhbGxwYXBl/ci1ibGFja2JvYXJk/LWNoYWxrYm9hcmQt/cm9vbS13YWxsXzEy/NTgtMjgzMTMuanBn/P3NpemU9NjI2JmV4/dD1qcGc'); /* Replace 'background.jpg' with your image file path */
+    background-image: url('https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?w=1060&t=st=1694507410~exp=1694508010~hmac=573a91c60efcb1d2886d981c699163d725827d985f6d94ef06617bd8bbc311a6'); /* Replace 'background.jpg' with your image file path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
+    height: 800px;
 }
 
 .container {

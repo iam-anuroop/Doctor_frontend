@@ -2,7 +2,7 @@ import React,{ useContext, useState} from "react"
 import AuthContext from "../context/AuthContext"
 import jwt_decode from 'jwt-decode'
 import { useNavigate } from "react-router-dom"
-import './Login.css'
+import './Login.scss'
 
 
 
@@ -14,24 +14,24 @@ const Login = () => {
 
 
   // style=================================
-  const [emailFocused, setEmailFocused] = useState(false);
-  const [passwordFocused, setPasswordFocused] = useState(false);
+  // const [emailFocused, setEmailFocused] = useState(false);
+  // const [passwordFocused, setPasswordFocused] = useState(false);
 
-  const handleEmailFocus = () => {
-    setEmailFocused(true);
-  };
+  // const handleEmailFocus = () => {
+  //   setEmailFocused(true);
+  // };
 
-  const handleEmailBlur = () => {
-    setEmailFocused(false);
-  };
+  // const handleEmailBlur = () => {
+  //   setEmailFocused(false);
+  // };
 
-  const handlePasswordFocus = () => {
-    setPasswordFocused(true);
-  };
+  // const handlePasswordFocus = () => {
+  //   setPasswordFocused(true);
+  // };
 
-  const handlePasswordBlur = () => {
-    setPasswordFocused(false);
-  };
+  // const handlePasswordBlur = () => {
+  //   setPasswordFocused(false);
+  // };
 
   // style---------------------------end
 
@@ -66,32 +66,20 @@ const Login = () => {
 
      return (
       <div className="mainlogin">
-      <div className="login-container">
-        <h1>Login</h1>
-        <form onSubmit={loginuser}>
-          <div className={`input-group ${emailFocused ? 'focused' : ''}`}>
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              onFocus={handleEmailFocus}
-              onBlur={handleEmailBlur}
-            />
-          </div>
-          <div className={`input-group ${passwordFocused ? 'focused' : ''}`}>
-            <label>Password</label>
-            <input
-              type="password"
-              name="password"
-              placeholder="Enter your password"
-              onFocus={handlePasswordFocus}
-              onBlur={handlePasswordBlur}
-            />
-          </div>
-          <input type="submit" value="Login" />
+        <form className="form" onSubmit={loginuser}>
+  
+        <div className="segment">
+          <h1>Login</h1>
+        </div>
+  
+        <label className="label">
+        <input className="input" type="email" name="email" placeholder="Email Address"/>
+        </label>
+        <label className="label">
+        <input className="input" type="password" name="password" placeholder="Password"/>
+        </label>
+        <button className="red button" value="Login" type="submit"><i className="icon ion-md-lock"></i> Log in</button>
         </form>
-      </div>
       </div>
     );
 

@@ -12,19 +12,21 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px;
-    background-color: #6e4f4f;
+    background-color: #f8f6f6;
   }
   
-  .user-card,
+  /* .user-card,
   .doctor-card {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #0a0000;
     border-radius: 5px;
     margin-bottom: 10px;
-    background-color: #f18a8a;
+    background-color: rgb(240, 233, 233);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
   }
-  
+   */
   button {
     background-color: #007bff;
     color: #fff;
@@ -36,6 +38,71 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #5e9fe5;
   }
-  
+  .viewblock{
+    display: flex;
+    gap: 5%;
+  }
+  .active{
+    background: rgba(128, 210, 128,0.4);
+  }
+  .blocked{
+    background: rgba(208, 75, 75,0.4);
+  }
+
+  /* Add this CSS to your stylesheet or component's CSS-in-JS */
+.user-card,.doctor-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+
+  /* Style for the 'active' user */
+  &.active {
+    background-color: #b3ffb3; /* Change the background color for active users */
+  }
+
+  /* Style for the 'blocked' user */
+  &.blocked {
+    background-color: #ff9999; /* Change the background color for blocked users */
+  }
+
+  /* Hover effect */
+  &:hover {
+    background-color: #f0f0f0; /* Change the background color on hover */
+  }
+
+  .user-info {
+    padding: 10px;
+
+    h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    h4 {
+      font-size: 14px;
+      color: #777;
+      margin: 0;
+    }
+  }
+
+  .viewblock {
+    text-align: right;
+  }
+
+  .view-button {
+    background-color: #007bff; /* Change button background color */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+
+    &:hover {
+      background-color: #0056b3; /* Change button background color on hover */
+    }
+  }
+}
