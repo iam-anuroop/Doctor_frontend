@@ -10,6 +10,6 @@ const {user} = useContext(AuthContext)
 return (
     <>{user? Component:<Navigate  to='login/' />}</>
   );
-};
+}; 
 
 export default Privateroute;
